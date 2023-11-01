@@ -28,7 +28,7 @@ class Cart:
         """Applies pricing rules to the cart to calculate discounts."""
 
         # The actual discount logic is imported from the pricing_rules module
-        apply_rules(self)
+        self.discount = apply_rules(self)
     
     def total_with_discounts(self):
         """Returns the total price of items in the cart after applying discounts."""
